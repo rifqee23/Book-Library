@@ -1,10 +1,16 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./style.css" rel="stylesheet">
 </head>
+
 <body>
 
   <header class="max-w-[96rem] top-10 left-1/2 transform -translate-x-1/2 fixed w-full z-50 mx-auto">
@@ -29,9 +35,9 @@
         your fav book effortlessly
       </h1>
       <p class="w-full max-w-xl mt-5 leading-10">
-        Embark on a literary journey like never before with our revolutionary 
-        library application! Introducing a seamless experience 
-        that transcends traditional boundaries, where  you 
+        Embark on a literary journey like never before with our revolutionary
+        library application! Introducing a seamless experience
+        that transcends traditional boundaries, where you
         can effortlessly search your favorite books.✨
       </p>
 
@@ -43,14 +49,15 @@
       <div class="absolute top-0 z-20 w-full h-full bg-blue-600 clip-path-custom-trapezoid"></div>
       <div class="absolute top-0 z-10 w-full h-full bg-blue-500 clip-path-custom-polygon"></div>
     </div>
-  </section> 
+  </section>
 
   <script>
     const loginBtn = document.getElementById("loginBtn");
-    loginBtn.addEventListener("click", function () {
+    loginBtn.addEventListener("click", function() {
       window.location.href = "login.html";
     })
   </script>
 </body>
+
 </html>
 <!-- clip-path-custom-polygon -->
