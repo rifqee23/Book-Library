@@ -13,9 +13,12 @@ session_start();
 
 <body>
 
-  <header class="max-w-[96rem] top-10 left-1/2 transform -translate-x-1/2 fixed w-full z-50 mx-auto">
+  <header class="max-w-[102rem] top-10 left-1/2 transform -translate-x-1/2 fixed w-full z-50 mx-auto">
     <nav class="relative flex items-center justify-between">
-      <h1 class="text-3xl font-bold "> Lidia</h1>
+      <div class="flex items-center gap-1">
+        <img class="w-[50px] h-[50px]" src="asset/lidia.png" alt="">
+        <h1 class="text-3xl font-bold "> Lidia</h1>
+      </div>
       <div class="absolute top-3 left-96">
         <ul class="flex gap-10">
           <li>Feature</li>
@@ -24,7 +27,7 @@ session_start();
           <li>Location</li>
         </ul>
       </div>
-      <button id="loginBtn" class="px-12 py-2 bg-white rounded-xl">Login</button>
+      <button id="loginBtn" class="px-12 py-2 text-lg font-medium bg-white rounded-xl">Login</button>
     </nav>
   </header>
 
@@ -54,7 +57,7 @@ session_start();
   <script>
     const loginBtn = document.getElementById("loginBtn");
     loginBtn.addEventListener("click", function() {
-      window.location.href = "login.html";
+      window.location.href = "login.php";
     })
   </script>
 </body>
