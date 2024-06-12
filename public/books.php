@@ -5,7 +5,7 @@ if (!isset($_SESSION['user'])) {
     header("Location: login.php");
     exit(); // Terminate script execution after the redirect
 }
-?> ?>
+?>
 
 <div class="p-6 bg-white rounded-lg shadow-lg">
     <h2 class="mb-4 text-2xl">Books</h2>

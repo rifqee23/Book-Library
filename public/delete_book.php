@@ -4,7 +4,7 @@ if (!isset($_SESSION['user'])) {
     header("Location: login.php");
     exit(); // Terminate script execution after the redirect
 }
-?> ?>
+?>
 
 <?php
 if (isset($_GET['id'])) {
