@@ -3,7 +3,7 @@ include "../connection.php";
 session_start();
 
 if (isset($_SESSION['user'])) {
-    header("Location: ../../index.php");
+    header("Location: ../../home.php");
     exit();
 }
 
@@ -18,7 +18,7 @@ if (isset($_POST["submit"])) {
         $row = mysqli_fetch_assoc($result);
         $_SESSION['user'] = $row;
 
-        header("Location: ../../index.php");
+        header("Location: ../../home.php");
         exit();
     } else {
         echo "<script>alert('Password Salah');</script>";
